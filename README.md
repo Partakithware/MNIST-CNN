@@ -38,14 +38,16 @@ Python 3.9+
 NumPy
 
 python-mnist
-
+```
 pip install numpy python-mnist
+```
 
 Usage
 
-download MNIST data:
+Download MNIST data:
 ===
 ```mkdir mnist_data```
+
 # Download MNIST data into ./mnist_data using the python-mnist helper scripts
 1. Download the MNIST Dataset
 
