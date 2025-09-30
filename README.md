@@ -47,13 +47,25 @@ git clone <repo-url>
 cd <repo>
 mkdir mnist_data
 # Download MNIST data into ./mnist_data using the python-mnist helper scripts
-t10k-images-idx3-ubyte
+1. Download the MNIST Dataset
 
-train-images-idx3-ubyte
+You can download the MNIST dataset directly from the official source using wget:
+cd ./mnist_data
+wget https://raw.githubusercontent.com/fgnt/mnist/master/train-images-idx3-ubyte.gz
+wget https://raw.githubusercontent.com/fgnt/mnist/master/train-labels-idx1-ubyte.gz
+wget https://raw.githubusercontent.com/fgnt/mnist/master/t10k-images-idx3-ubyte.gz
+wget https://raw.githubusercontent.com/fgnt/mnist/master/t10k-labels-idx1-ubyte.gz
 
-t10k-labels-idx1-ubyte 
+After downloading, unzip the files:
+gunzip *.gz
 
-train-labels-idx1-ubyte
+Ensure the following files are present in your mnist_data directory:
+train-images-idx3-ubyte,
+train-labels-idx1-ubyte,
+t10k-images-idx3-ubyte,
+t10k-labels-idx1-ubyte
+
+
 
 Run the training script:
 
