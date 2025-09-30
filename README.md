@@ -50,11 +50,13 @@ mkdir mnist_data
 1. Download the MNIST Dataset
 
 You can download the MNIST dataset directly from the official source using wget:
+```
 cd ./mnist_data
 wget https://raw.githubusercontent.com/fgnt/mnist/master/train-images-idx3-ubyte.gz
 wget https://raw.githubusercontent.com/fgnt/mnist/master/train-labels-idx1-ubyte.gz
 wget https://raw.githubusercontent.com/fgnt/mnist/master/t10k-images-idx3-ubyte.gz
 wget https://raw.githubusercontent.com/fgnt/mnist/master/t10k-labels-idx1-ubyte.gz
+```
 
 After downloading, unzip the files:
 gunzip *.gz
